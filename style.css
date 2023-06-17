@@ -374,3 +374,79 @@ section.skills .item:nth-child(2) .progress-bar .progress{
 section.skills .item:nth-child(3) .progress-bar .progress{
     width: 75%;
 }
+
+section.services{
+    background: var(--color-light);
+}
+
+section.services .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+section.services .container .service{
+    background: var(--color-white);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    cursor: default;
+    transition: var(--transition);
+}
+
+section.services .container .service:hover{
+    box-shadow: 0 3rem 3rem var(--color-primary-light);
+}
+
+section.services .container .service span{
+    background: var(--color-primary);
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--color-white);
+}
+
+section.services .container .service:nth-child(2) span{
+    background: var(--color-warning);
+}
+
+section.services .container .service:nth-child(3) span{
+    background: var(--color-success);
+}
+
+section.recent-work h1{
+    text-align: left;
+    margin: 3rem 0 1rem;
+    width: 65%;
+}
+
+section.recent-work .projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+section.recent-work .projects .project{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section.recent-work .projects .project .action{
+    display: flex;
+    gap: 2rem;
+}
+
+section.recent-work .projects .project .action a{
+    color: var(--color-primary);
+}
+
+section.recent-work .projects .project .action a:hover{
+    text-decoration: underline;
+}
