@@ -620,3 +620,203 @@ footer .copyright{
     padding: 2rem 0;
     font-size: 0.8rem;
 }
+
+
+@media  screen and (max-width: 600px) {
+    h1{
+        font-size: 2.2rem;
+    }
+    h2{
+        font-size: 1.6rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    h5{
+        font-size: 0.6rem;
+    }
+
+    .container{
+        width: 94%;
+    }
+
+    nav h3{
+        margin-left: 1rem;
+    }
+
+    nav .container{
+        width: 100%;
+    }
+
+    nav .container ul {
+        position: fixed;
+        top: 0;
+        flex-direction: column;
+        z-index: 3;
+        width: 16rem;
+        height: 100vh;
+        background: var(--color-white);
+        box-shadow: 1rem 0 2rem var(--color-primary-light);
+        display: none;
+    }
+
+    nav ul li{
+        height: 4.6rem;
+        width: 100%;
+    }
+
+    nav .container ul li a{
+        width: 100%;
+        justify-content: start;
+        padding-left: 2rem;
+    }
+
+    nav .container ul li a:hover{
+        padding-left: 3rem;
+    }
+
+    nav button{
+        display: inline-block;
+        cursor: pointer;
+        background: transparent;
+        color: var(--color-black);
+        margin-right: 1rem;
+    }
+
+    nav button#close-btn{
+        display: none;
+    }
+
+    section.landing{
+        margin-top: -4rem;
+        padding-bottom: 7rem;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    section.landing .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 50%;
+        text-align: center;
+        row-gap: 6rem;
+    }
+
+    section.landing .container .socials{
+        display: none;
+    }
+
+    section.landing .container .info{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    section.landing .container .info h1{
+        text-align: center;
+    }
+
+    section.landing .container .info p{
+        margin: 0 auto;
+        width: 92%;
+    }
+
+    section.landing .container .profile-area{
+        grid-row: 1;
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    section.landing .container .outer-circle{
+        width: 16rem;
+        height: 16rem;
+    }
+
+    section.landing .container .inner-circle{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    section.landing .container .outer-circle span{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    section.landing .profile-area .outer-circle span:nth-child(1){
+        left: calc(60% - 1.5rem);
+        top: -1.5rem;
+    }
+    
+    section.landing .profile-area .outer-circle span:nth-child(1.5){
+        right: -1.5rem;
+        top: calc(50% - 1.5rem);
+    }
+    
+    section.landing .profile-area .outer-circle span:nth-child(3){
+        left: -1.5rem;
+        top: calc(50% - 1.5rem);
+    }
+    
+    section.landing .profile-area .outer-circle span:nth-child(4){
+        left: calc(60% - 1.5rem);
+        bottom: -1.5rem;
+    }
+
+    section.about .container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    section.about .container .image{
+        width: 32rem;
+        height: 32rem;
+    }
+
+    section.skills .container{
+        width: 94%;
+    }
+
+    section.services .container{
+        grid-template-columns: 1fr;
+    }
+
+    section.recent-work .container .projects{
+        grid-template-columns: 1fr;
+    }
+
+    section.recent-work .container h1{
+        width: 94vw;
+        margin: 1.4rem 0 1rem;
+    }
+
+    section.testimonials .container{
+        grid-template-columns: 1fr;
+        width: 94vw;
+    }
+
+    section.testimonials .container .testimonial .hed .stars span{
+        font-size: 0.8rem;
+    }
+
+    section.contact .container{
+        width: 94vw;
+    }
+
+    section.contact .container p{
+        width: 80vw;
+        margin: 0.5rem auto 0;
+    }
+
+    footer .container{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    footer .container ul{
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}
