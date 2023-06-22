@@ -469,11 +469,13 @@ section.recent-work .projects .project .action{
     gap: 2rem;
 }
 
-section.recent-work .projects .project .action a{
+/* section.recent-work .projects .project .action  */
+a{
     color: var(--color-primary);
 }
 
-section.recent-work .projects .project .action a:hover{
+/* section.recent-work .projects .project .action  */
+a:hover{
     text-decoration: underline;
 }
 
