@@ -797,6 +797,10 @@ footer .copyright{
         text-align: center;
     }
 
+    section.about .container .info{
+        
+    }
+
     section.about .container .image{
         width: 32rem;
         height: 32rem;
